@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+:root {
+    --primary-color: #00bf72;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row {
+    width: 80%;
+    height: 80%;
+    max-height: 700px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px rgb(0, 0, 0,0.2);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-content {
+    flex: 3;
+    height: 100%;
+}
+.bg-content {
+    flex: 2;
+    height: 100%;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    display: flex;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bg-content h1 {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bg-content h1::after {
+    width: 60px;
+    height: 4px;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: white;
+    content: "";
+}
+.bg-content p {
+    color: white;
+    width: 80%;
+    font-size: 16px;
+    margin: 10px 0px;
+    text-align: center;
+}
+.bg-content button {
+    padding: 12px 20px;
+    width: 200px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 40px;
+    margin: 30px 0px;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.bg-content a {
+    text-decoration: none;
+    color: white;
+}
+.bg-content button:hover {
+    cursor: pointer;
+}
+.form-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    width: 70%;
+}
+.form-content h1 {
+    font-size: 28px;
+    margin: 10px 0px;
+    display: flex; 
+    flex-direction: column;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-items: center;
+    color: var(--primary-color);
+}
+.form-content h1::after {
+    width: 80px;
+    height: 6px;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 4px;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    content: "";
+}
+.form-control {
+    width: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-control p {
+    flex-direction: column;
+    display: flex;
+    margin: 10px 0px;
+    width: 100%;
+}
+.form-control input {
+    height: 50px;
+    width: 100%;
+    border: 4px;
+    width: 100%;
+    text-indent: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 5px 0px;
+    outline: none;
+    border: 0.5px solid rgb(0, 0, 0,0.1);
+}
+.form-control input:focus {
+    border:1px solid var(--primary-color);
+}
+.form-control label {
+    opacity: 0.5;
+    font-size: 14px;
+}
+.form-control .btn-login {
+    width: 180px;
+    text-indent: 0px;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    border-radius: 40px;
+    border: none;
+    color: white;
+    outline: none;
+}
+.btn-login:hover {
+    cursor: poin;
+} 
+.form-control ul {
+    list-style-type: none;
+}
+.form-control ul li,
+.form-control span {
+    opacity: 0.6;
+    font-size: 12px;
+    margin: 5px 0px;
+    text-align: left;
+} 
